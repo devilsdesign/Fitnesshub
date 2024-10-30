@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plans</title>
+    <link rel="stylesheet" type="text/css" href="maincss.css">
+    <style>
+        /* Style for buttons or links */
+        .workout-plan {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            background-color: #333;
+            margin: 10px 0;
+            text-align: center;
+            border: 2px solid white; /* Add a white border */
+            border-radius: 5px; /* Optional: adds rounded corners */
+        }
+
+        .workout-plan:hover {
+            background-color: #575757;
+        }
+
+        /* Style for h1 */
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        /* Flexbox layout for the container to ensure boxes are stacked horizontally */
+        .container {
+            display: flex;
+            flex-direction: row; /* Arrange items horizontally */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Style for each box to give a bit of spacing and structure */
+        .box {
+            margin: 10px;
+        }
+
+        /* Style for the images on left and right */
+        .image-box {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 400px;
+            height: 400px;
+        }
+
+        /* Flexbox container for the links */
+        .links-container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+   <h1><br>Bodybuilding Workout Plans</h1>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- Left Image (Ronnie) -->
+    <div class="image-box">
+        <img src="ronnie.png" alt="Ronnie">
+    </div>
+
+    <!-- Center Content (Links) -->
+    <div class="links-container">
+        <a href="workout-plans.html" class="workout-plan">View Body Building Plans</a>
+        <a href="index.html" class="workout-plan">HOME</a>
+    </div>
+
+    <!-- Right Image (Arnold) -->
+    <div class="image-box">
+        <img src="arnold.png" alt="Arnold">
+    </div>
+</div>
+
+</body>
+</html>

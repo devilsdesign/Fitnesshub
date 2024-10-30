@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plans</title>
+    <link rel="stylesheet" type="text/css" href="maincss.css">
+    <style>
+        /* Style for buttons or links */
+        .workout-plan {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            background-color: #333;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .workout-plan:hover {
+            background-color: #575757;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        /* Style for the container and boxes */
+        .container {
+            display: flex;
+            flex-direction: column; /* Stacks the boxes vertically */
+            align-items: center; /* Centers the boxes horizontally */
+        }
+
+        .box {
+            width: 100%; /* Full width for each box */
+            max-width: 400px; /* Optional, adjust width as needed */
+            margin: 10px 0; /* Adds spacing between the boxes */
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+   <h1><br>Weight Loss Plans</h1>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="box">
+        <a href="weightloss-plans.html" class="workout-plan">View Weight Loss Plans</a>
+    </div>
+    <div class="box">
+        <a href="index.html" class="workout-plan">HOME</a>
+    </div>
+</div>
+
+</body>
+</html>

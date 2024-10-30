@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" type="text/css" href="maincss.css">
+</head>
+<body>
+
+<div class="banner">
+   <h1>Fitness Hub</h1>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="welcome.php">Tracker</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="box"> 
+        <a href="bodybuilding.html"><img src="cbum.png" alt="Bodybuilding"> <br>
+            Body Building 💪
+        </a>
+        <a href="workout-plans.html" class="btn">View Workout Plans</a>
+    </div>
+    
+    <div class="box">
+        <a href="weightloss.html"><img src="annabel-modified.png" alt="Weight Loss"> <br>
+            Weight Loss 🏃‍♀
+        </a>
+        <a href="weightloss-plans.html" class="weightloss-plan">View Weight Loss Plans</a>
+    </div>
+    
+    <div class="box">
+        <a href="functional.html"><img src="eddie-modified.png" alt="Functional Training"> <br>
+            Functional Training 🏋🏻‍♀️
+        </a>
+        <a href="functional-plans.html" class="functional-plan">View Functional Training Plans</a>
+    </div>
+</div>
+<script>
+    function logout() {
+        // Clear user data from local storage
+        localStorage.removeItem('user'); // Replace 'user' with your key
+        // Redirect to the login page
+        window.location.href = 'login.html';
+    }
+</script>
+</body>
+</html>
+
